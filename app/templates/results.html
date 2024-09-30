@@ -1,1 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>APT Activity Results</h1>
+
+<!-- Placeholder for results -->
+<div id="results">
+    <ul>
+        <!-- Example of how data could be rendered (populate dynamically using Flask) -->
+        {% for activity in activities %}
+        <li>
+            <h2>{{ activity.title }}</h2>
+            <p>{{ activity.description }}</p>
+            <a href="{{ activity.link }}" target="_blank">Read More</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<button id="fetch-apt-data">Fetch Latest Data</button>
+{% endblock %}
 
