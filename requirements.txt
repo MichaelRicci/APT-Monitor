@@ -1,1 +1,6 @@
-
+Flask
+requests
+beautifulsoup4
+Scrapy
+SQLAlchemy
+Flask-SQLAlchemy
